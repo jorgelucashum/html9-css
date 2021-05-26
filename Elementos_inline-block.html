@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elementos inline, block e inline-block</title>
+
+        <style type="text/css">
+
+        /*Elemento do tipo block: Por padrão ocupa todo o espaço da tela, e fica um abaixo do outro. 
+        Ex: <h1>, <p>, <table>, <div>...*/
+
+        /*Elemento do tipo inline: Por padrão ocupa somente o espaço do conteúdo, e fica um ao lado do outro. 
+        Ex: <a>, <span>, <img>... */
+        
+            .borda{
+                border: 1px solid red;
+                /* display: inline; O 'display' altera o comportamento padrão do elemento para o definido. */
+            }
+
+            .borda2{
+                border: 1px solid red;
+                display: inline-block; /* Atributo: inline-block, Os elementos ficam um ao lado do outro caso caibam na mesma linha, caso o contrário ficará abaixo. */
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <hr> <!-- Tipo block: -->
+        <h1 class="borda">Bloco 1</h1>
+        <h1 class="borda">Bloco 2</h1>
+
+        <hr> <!-- Tipo inline: -->
+        <span class="borda">inline 0</span>
+        <span class="borda">inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 
+            inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1
+            inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 
+            inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 inline 1 
+        </span>
+
+        <hr> <!--Tipo inline-block: -->
+        <span class="borda2">inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline
+            2 inline 2 inline 2 inline 2 inline 2  inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 
+            inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 
+            inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2 inline 2</span>
+        <span class="borda2">inline 3</span>
+
+
+    </body>
+</html>
