@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Posicionamentos: static, relative, absolute e fixed</title>
+
+        <style>
+
+            body{
+                background: #007fc7;
+            }
+
+            
+            h1{
+                position: static;
+            }
+
+            p{
+                width: 400px;
+            }
+
+            #container{
+                background: #FFF;
+                width: 800px;
+                margin: 10px auto; /* o espaçamento verticais está definido em 10px e os horizontais automatico, de acordo com o tamanho da tela. */
+                padding: 10px;
+            }
+
+            /* Posicionamento: relativo
+            Movimenta o elemento a partir da posição inicial usando as propriedades (top, bottom, right, left) */
+            .relative{
+                border: 1px solid red;
+                position: relative;
+                top: -15px;
+                left: 400px;
+            }
+
+
+            /* Posicionamento: absoluto
+            Movimenta o elemento para sua posição original, ignorando e ficando por cima de todos os outros fatores. (Não sai de dentro do container caso sua 'position' seja diferente da padrão) */
+           .absolute {
+               border: 1px solid blue; 
+               position: absolute;
+               background: #f2f2f2;
+               top: 65px;
+           }
+
+            /* Posicionamento: fixo
+            O elemento fica fixo em relação a janela do navegador. */
+            .fixed {
+               border: 1px solid green; 
+               position: fixed;
+               background: #f2f2f2;
+               margin: 0px; /*Zerar o espaçamento externo padrão para ficar colado no navegador. */
+               top: 0px;
+               left: 0px;
+           }
+
+        </style>
+        
+    </head>
+
+    <body>
+
+        <div id="container">
+            <h1>Posicionamentos</h1>
+
+            <p>
+                P1 aragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+            </p>
+
+            <p class="relative">
+                Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  
+                Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  
+                Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  
+                Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  Relative  
+            </p>
+
+            <p class="absolute"> 
+                Absolute Absolute Absolute Absolute Absolute Absolute Absolute Absolute Absolute Absolute Absolute Absolute Absolute 
+                Absolute Absolute Absolute Absolute Absolute Absolute Absolute Absolute Absolute Absolute Absolute Absolute Absolute Absolute Absolute
+                Absolute Absolute 
+
+            </p>
+
+            <p class="fixed">
+                Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed 
+                Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed 
+                Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed 
+                Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed Fixed 
+            </p>
+
+            <p>
+                P1 aragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+            </p>
+
+            <p>
+                P1 aragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+            </p>
+
+            <p>
+                P1 aragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+            </p>
+
+            <p>
+                P1 aragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+            </p>
+
+            <p>
+                P1 aragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo
+                Paragrafo teste, paragrafoteste para gra fo teste. P aragrafo 
+            </p>
+
+        </div>
+        
+    </body>
+</html>
